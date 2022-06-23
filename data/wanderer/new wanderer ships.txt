@@ -1,0 +1,124 @@
+
+ship "Squall"
+	sprite "ship/squall"
+	thumbnail "thumbnail/squall"
+	attributes
+		category "Medium Warship"
+		licenses
+			"Wanderer Military"
+		"cost" 26300000
+		"shields" 46300
+		"hull" 31800
+		"required crew" 45
+		"bunks" 62
+		"mass" 460
+		"drag" 7.1
+		"heat dissipation" 0.6
+		"fuel capacity" 600
+		"cargo space" 51
+		"outfit space" 681
+		"weapon capacity" 288
+		"engine capacity" 126
+		weapon
+			"blast radius" 340
+			"shield damage" 3400
+			"hull damage" 1700
+			"hit force" 5100
+	outfits
+		"Dual Sunbeam Turret" 2
+		"Moonbeam Turret" 2
+		"Thunderhead Launcher" 2
+		"Thunderhead Missile" 120
+		"Thunderhead Storage Array" 2
+		
+		"Blue Sun Reactor"
+		"Dark Storm Shielding" 2
+		"Wanderer Ramscoop"
+		
+		"Type 4 Radiant Thruster"
+		"Type 4 Radiant Steering"
+		"Hyperdrive"
+	
+	engine -34 135.5
+	engine 34 135.5
+	gun -22.5 -106 "Thunderhead Launcher"
+	gun 22.5 -106 "Thunderhead Launcher"
+	turret 0 -68.5 "Moonbeam Turret"
+	turret -21 29.5 "Dual Sunbeam Turret"
+	turret 21 29.5 "Dual Sunbeam Turret"
+	turret 0 87 "Moonbeam Turret"
+	bay Fighter -33 -4
+		angle 325
+	bay Fighter 33 -4
+		angle 35
+	bay Drone -75.5 18.5
+		angle 340
+		under
+	bay Drone 75.5 18.5
+		angle 20
+		under
+	bay "Drone" -67 100
+		angle 320
+		under
+	bay "Drone" 67 100
+		angle 40
+		under
+	explode "small explosion" 80
+	explode "medium explosion" 50
+	explode "large explosion" 25
+	"final explode" "final explosion medium" 1
+	description ""
+
+
+
+ship "Hailstone"
+	sprite "ship/hailstorm"
+	thumbnail "thumbnail/hailstorm"
+	attributes
+		category "Fighter"
+		licenses
+			"Wanderer Military"
+		"cost" 2000000
+		"shields" 3900
+		"hull" 2300
+		"required crew" 1
+		"bunks" 1
+		"mass" 25
+		"drag" 0.9
+		"heat dissipation" 1.0
+		"outfit space" 113
+		"weapon capacity" 38
+		"engine capacity" 36
+		weapon
+			"blast radius" 24
+			"shield damage" 240
+			"hull damage" 120
+			"hit force" 360
+	outfits
+		"Moonbeam" 2
+		
+		"Small Biochemical Cell" 2
+		"Clear Sky Shielding"
+		
+		"Type 1 Radiant Thruster"
+		"Type 2 Radiant Steering"
+	
+	engine -10 37.5
+	engine 10 37.5
+	gun -13.5 -5.5
+	gun 13.5 -5.5
+	explode "tiny explosion" 20
+	explode "small explosion" 6
+	"final explode" "final explosion small"
+	description ""
+
+ship "Hailstone" "Hailstone (Sunbeam)"
+	outfits
+		"Sunbeam"
+		
+		"Small Biochemical Cell" 2
+		"Clear Sky Shielding"
+		
+		"Type 1 Radiant Thruster"
+		"Type 2 Radiant Steering"
+
