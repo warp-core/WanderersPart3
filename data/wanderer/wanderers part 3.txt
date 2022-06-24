@@ -85,8 +85,81 @@ mission "Wanderers: Korath Translator 1A"
 		has "Wanderers: Korath Translator 1: done"
 	on offer
 		conversation
-			`As you make your way to the planet, you note that this system is very active, with many cargo and transport ships going in all directions, the logistics of moving an entire species from one set of planets to another via a wormhole in a single system must be an incredible logistical challenge, especially when the destination systems can barely support life. This is something the Wanderers have done many times, probably more than you can count, maybe more than they can, and the patterns you start to see emerge in the movements of the ships around you show that this is a well choreographed operation. You also note a number of much smaller craft you don't recognise, interceptor sized, perhaps, travelling to the east, into the border with the Unfettered Hai, guarded by the two advanced Pug warships."`
-			`	
+			`As you made your way to the planet, you note that this system is very active, with many cargo and transport ships going in all directions, the logistics of moving an entire species from one set of planets to another via a wormhole in a single system must be an incredible logistical challenge, especially when the destination systems can barely support life. This is something the Wanderers have done many times, probably more than you can count, maybe more than they can, and the patterns you start to see emerge in the movements of the ships around you show that this is a well choreographed operation. You also note a number of much smaller craft you don't recognise, interceptor sized, perhaps, travelling to the east, into the border with the Unfettered Hai, guarded by the two advanced Pug warships."`
+			`	During the landing, Rek contacts Sayari and arranges a meeting with her.`
+			`	When you exit the lift in the main government building, you are met almost immediately by Sayari, and she leads the three of you to her office.`
+			`	Once inside, Rek explains the situation between the Wanderers and the Korath and her plan to visit Eruk and aim to develop a translator together, using the Hai language so Pa'aret can be involved, even though the rest of you can use your own language.`
+			`	Sayari seems to understand where Rek is going with this, "And you would like me to [chaperone, guide, escort] you to <planet>?"`
+			`	"Indeed, no Wanderer has ever [visited, been seen on] a Hai world before, I thought it [prudent, wise] that you accompany us, if possible." Rek agrees.`
+			`	"I would be glad to. It has been a long time since I have [returned to, visited] Hai space, if you would be willing, I would appreciate a stop at Hai-Home on this [journey, trip]? I would also like to see these new worlds your people are [migrating?] to, and to [meet, encounter] the Korath there." Sayari agrees.`
+			choice
+				`	"I think we can find time for that."`
+					goto afar
+				`	"Are you sure it's a good idea for you to visit the Korath?"`
+			`	Sayari raises an eyebrow, "Why not? Would there be [ill feelings?] towards me? It is true the Korath once [raided, attacked] our space, it is a time I even remember. But it was my understanding that the Korath there now have chosen [peace, friendship]. I would not hold the actions of their kin and their ancestors against them."`
+			`	Rek agrees, "The Korath who live there now are indeed [peaceful, friendly], though seeing yet another [alien race?] in their territory may concern them that the Hai may [invade, attack] them, perhaps it would be best for you to only [watch from afar, observe]?"`
+				goto end
+			label afar
+			`	Rek interjects, "While the Korath there are [peaceful, friendly], seeing yet another [alien race?] in their territory may concern them that the Hai may [invade, attack] them, perhaps it would be best for you to only [watch from afar, observe]?"`
+			label end
+			`	Sayari reluctantly agrees, but makes Rek promise to take her to meet the Kor Efret "when the situation is more [stable, certain]."`
+			`	Before you leave, you suggest to Rek and Pa'aret that Eruk will probably be interested in learning about Wanderer history and culture, based on your previous encounter with him. Rek agrees that taking something with you would be a good idea and disappears into the government building for a while. When she returns to your ship, she has a bag with many data cards.`
+			choice
+				`	(Say nothing.)`
+					accept
+				`	"You didn't need to bring everything."`
+			`	She looks quizzically at you. "Everything? These records only extend back ten Molts, even then, it is not possible to provide everything."`
+			choice
+				`	"Only ten?"`
+					goto ten
+				`	"Why is it not possible to provide everything?"`
+			`	After a few seconds of though, she begins, "Sometimes, following the Eye, records are not kept will, it is often a chaotic time, and sometimes, past records are lost. This data still covers close to a million of your years."`
+				goto nextquestion
+			label ten
+			`	"That is still close to a million of your years, <first>." She explains, with a hint of condescension.`
+			label nextquestion
+			choice
+				`	"How long is the Wanderer history in total?"`
+			`	The expression on her face is difficult to decipher, perhaps.. wistful? "It is impossible for us to know for sure. Many of the older records are long lost to us. We do know we have been through at least a hundred different regions of space, and usually spend tens of thousands of years in each."`
+			`	That would make the Wanderers as a species millions of years old, far older than almost any of the other civilizations you've met.`
+				accept
 
-			
+mission "Wanderers: Korath Translator 2"
+	landing
+	name "Show Eruk Wanderer space"
+	description "The Hai technologist, Eruk, wants to 
+	source "Greenwater"
+	destination #the place where the Mind labs are
+	passengers 3
+	to offer
+		has "Wanderers: Korath Translator 1A: done"
+	on offer
+		conversation
+			``
+
+mission "Wanderers: Korath Translator 3"
+	landing
+	name "Return to <planet>"
+	description "Take Rek, Pa'aret, and the Mind to <destination>."
+	source #the place where the Mind labs are
+	desctination "Sabira Eseskrai"
+	passengers 3
+	cargo "Artifical Mind" 1
+	blocked #blocked message
+	to offer
+		has "Wanderers: Korath Translator 2: done"
+	on offer
+		conversation
+			``
+
+mission "Wanderers: Korath Translator 4"
+	landing
+	invisible
+	source "Sabira Eseskrai"
+	to offer
+		has "Wanderers: Korath Translator 3: done"
+	on offer
+		#should probably trigger some event on a timer
+		conversation
+			``
 
