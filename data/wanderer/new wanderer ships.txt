@@ -79,14 +79,14 @@ ship "Hailstone"
 		licenses
 			"Wanderer Military"
 		"cost" 2000000
-		"shields" 3900
+		"shields" 3600
 		"hull" 2300
 		"required crew" 1
 		"bunks" 1
 		"mass" 25
 		"drag" 0.9
 		"heat dissipation" 1.0
-		"outfit space" 113
+		"outfit space" 119
 		"weapon capacity" 38
 		"engine capacity" 36
 		weapon
