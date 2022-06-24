@@ -9,4 +9,5 @@ outfit "Clear Sky Shielding"
 	"outfit space" -10
 	"shield generation" 0.75
 	"shield energy" 1.6
-	description "This tiny Wanderer shield generator is designed to fit inside their smallest ships and is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other generators."
+	"shield heat" 0.2
+	description "This tiny Wanderer shield generator is designed to fit inside their smallest ships and is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other generators and also generates a small amount of heat."
