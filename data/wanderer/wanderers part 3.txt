@@ -19,7 +19,7 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			label gaps
 			choice
 				`	"I suppose you're filling in the gaps?"`
-			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."
+			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."`
 			choice
 				`	"Can't you tell me on the way?"`
 			`	She acquiesces and explains, "The Molt has given me the ability to relatively quickly learn the Korath language, however we cannot assume it will do the same for all others. I would like to visit the man you got your speaking translator from, I'm hoping between his linguistic work, my own experiences with the Korath, and one of our artificial minds, it will be possible to deveelop a translator between the Wanderer or Hai and Korath languages."`
@@ -51,7 +51,6 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			choice
 				`	"I noticed Sobari Tele'ek was missing from the meeting. Is he managing the defense against the Hai?"`
 			`	"As you may know, Tele'ek was nearing the Molt while we were still dealing with the Kor Sestor drones. Since their factories have been shut down, and there are no longer any immediate threats to us here, he has recently elected to stop resisting and allow the Molt to take its course. Once it is done, he will be only the second since the Eye opened."`
-			`	
 
 mission "Wanderers: Korath Translator 1"
 	name "Collect Sayari"
@@ -86,7 +85,3 @@ mission "Wanderers: Korath Translator 1A"
 	on offer
 		conversation
 			`As you make your way to the planet, you note that this system is very active, with many cargo and transport ships going in all directions, the logistics of moving an entire species from one set of planets to another via a wormhole in a single system must be an incredible logistical challenge, especially when the destination systems can barely support life. This is something the Wanderers have done many times, probably more than you can count, maybe more than they can, and the patterns you start to see emerge in the movements of the ships around you show that this is a well choreographed operation. You also note a number of much smaller craft you don't recognise, interceptor sized, perhaps, travelling to the east, into the border with the Unfettered Hai, guarded by the two advanced Pug warships."`
-			`	
-
-			
-

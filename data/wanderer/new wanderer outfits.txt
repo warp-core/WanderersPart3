@@ -10,5 +10,3 @@ outfit "Clear Sky Shielding"
 	"shield generation" 0.35
 	"shield energy" 0.6
 	description "To go alongside their wider use of fighter sized ships, the Wanderers have begun producing this tiny shield generator."
-
-    
