@@ -57,10 +57,10 @@ ship "Squall"
 	bay Drone 75.5 18.5
 		angle 20
 		under
-	bay "Drone" -67 100
+	bay Drone -67 100
 		angle 320
 		under
-	bay "Drone" 67 100
+	bay Drone 67 100
 		angle 40
 		under
 	explode "small explosion" 80
@@ -68,7 +68,6 @@ ship "Squall"
 	explode "large explosion" 25
 	"final explode" "final explosion medium" 1
 	description ""
-
 
 
 ship "Hailstone"
@@ -86,7 +85,7 @@ ship "Hailstone"
 		"mass" 25
 		"drag" 0.9
 		"heat dissipation" 1.0
-		"outfit space" 113
+		"outfit space" 114
 		"weapon capacity" 38
 		"engine capacity" 36
 		weapon
