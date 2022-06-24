@@ -1,0 +1,7 @@
+
+mission "Wanderers: Improved Resistance 1"
+    name "Take Tele'ek to the Mereti"
+    description "Take Tele'ek and some researchers to the Mereti to test and improve resistance against disruptors on new Wanderer ships."
+    source #we'll see
+    destination #Kor Mereti system
+    
