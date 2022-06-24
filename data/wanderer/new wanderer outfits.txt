@@ -1,13 +1,13 @@
 
-outfit "Clear Sky Shielding"
+outfit "Bright Cloud Shielding"
 	category "Systems"
 	licenses
 		"Wanderer Outfits"
-	cost 180000
+	cost 220000
 	thumbnail "outfit/bright cloud"
-	"mass" 10
-	"outfit space" -10
-	"shield generation" 0.75
-	"shield energy" 1.6
-	"shield heat" 0.2
-	description "This tiny Wanderer shield generator is designed to fit inside their smallest ships and is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other generators and also generates a small amount of heat."
+	"mass" 19
+	"outfit space" -19
+	"shield generation" 1.5
+	"shield energy" 3.0
+	description "This small Wanderer shield generator is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other shield generators do."
+    

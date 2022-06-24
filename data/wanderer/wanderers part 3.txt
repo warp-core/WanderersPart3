@@ -19,10 +19,10 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			label gaps
 			choice
 				`	"I suppose you're filling in the gaps?"`
-			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."`
+			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."
 			choice
 				`	"Can't you tell me on the way?"`
-			`	She acquiesces and explains, "The Molt has given me the ability to relatively quickly learn the Korath language, however we cannot assume it will do the same for all others. I would like to visit the man you got your speaking translator from, I'm hoping between his linguistic work, my own experiences with the Korath, and one of our artificial minds, it will be possible to develop a translator between the Wanderer or Hai and Korath languages."`
+			`	She acquiesces and explains, "The Molt has given me the ability to relatively quickly learn the Korath language, however we cannot assume it will do the same for all others. I would like to visit the man you got your speaking translator from, I'm hoping between his linguistic work, my own experiences with the Korath, and one of our artificial minds, it will be possible to deveelop a translator between the Wanderer or Hai and Korath languages."`
 			`	She leads you to one of the larger buildings in the settlement, apparently akin to a town hall of sorts, inside are a number of Wanderers and Kor Efret, some standing, some sitting, arranged in a circle. The Wanderers form one half, the Korath form the other. Many of the Wanderers do not look quite right to you, but you're not sure what exactly it is. You recognise Tema'a Iriket, the terraforming specialist, but are surprised to see that Sobari Tele'ek, who has played a significant role in the Wanderers' development on this side of the Eye up until now, is not present.`
 			`	A few more filter in over the next few minutes. Once everyone has arrived and settled down, you are somewhat surprised to see that one of the Korath takes the lead and starts speaking. After it is done, Rek begins speaking to the rest of the Wanderers in their own language. They all seem to respond positively and one of them speaks to the Korath, with Rek as translator. Unfortunately, not in the Hai language so your translator cannot help and Rek seems too busy, now that the discussion is developing further with someone speaking, and needing translation, almost continuously.`
 			`	After several minutes, one of the Korath gestures to you while speaking, and Rek finally brings you in on the discussion, "He thanks you for your contributions to our efforts to make this territory safer, by eliminating hte threat of the war machines, and rejuvenating these worlds through your help to us and was wondering if you'd be willing to assist the Efreti more directly?"`
@@ -51,6 +51,7 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			choice
 				`	"I noticed Sobari Tele'ek was missing from the meeting. Is he managing the defense against the Hai?"`
 			`	"As you may know, Tele'ek was nearing the Molt while we were still dealing with the Kor Sestor drones. Since their factories have been shut down, and there are no longer any immediate threats to us here, he has recently elected to stop resisting and allow the Molt to take its course. Once it is done, he will be only the second since the Eye opened."`
+			`	
 
 mission "Wanderers: Korath Translator 1"
 	name "Collect Sayari"
