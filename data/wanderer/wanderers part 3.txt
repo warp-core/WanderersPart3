@@ -19,7 +19,7 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			label gaps
 			choice
 				`	"I suppose you're filling in the gaps?"`
-			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."
+			`	"Indeed. To that end, I'd like to make a request of you, but first, our leaders here, both Wanderer and Korath, are going to be metting shortly and we'd like you to join us."`
 			choice
 				`	"Can't you tell me on the way?"`
 			`	She acquiesces and explains, "The Molt has given me the ability to relatively quickly learn the Korath language, however we cannot assume it will do the same for all others. I would like to visit the man you got your speaking translator from, I'm hoping between his linguistic work, my own experiences with the Korath, and one of our artificial minds, it will be possible to deveelop a translator between the Wanderer or Hai and Korath languages."`
@@ -51,7 +51,8 @@ mission "Wanderers: Sabira Eseskrai Meeting"
 			choice
 				`	"I noticed Sobari Tele'ek was missing from the meeting. Is he managing the defense against the Hai?"`
 			`	"As you may know, Tele'ek was nearing the Molt while we were still dealing with the Kor Sestor drones. Since their factories have been shut down, and there are no longer any immediate threats to us here, he has recently elected to stop resisting and allow the Molt to take its course. Once it is done, he will be only the second since the Eye opened."`
-			`	
+			``
+				accept
 
 mission "Wanderers: Korath Translator 1"
 	name "Collect Sayari"
@@ -94,15 +95,12 @@ mission "Wanderers: Korath Translator 1A"
 			`	"I would be glad to. It has been a long time since I have [returned to, visited] Hai space, if you would be willing, I would appreciate a stop at Hai-Home on this [journey, trip]? I would also like to see these new worlds your people are [migrating?] to, and to [meet, encounter] the Korath there." Sayari agrees.`
 			choice
 				`	"I think we can find time for that."`
-					goto afar
+					goto end
 				`	"Are you sure it's a good idea for you to visit the Korath?"`
 			`	Sayari raises an eyebrow, "Why not? Would there be [ill feelings?] towards me? It is true the Korath once [raided, attacked] our space, it is a time I even remember. But it was my understanding that the Korath there now have chosen [peace, friendship]. I would not hold the actions of their kin and their ancestors against them."`
-			`	Rek agrees, "The Korath who live there now are indeed [peaceful, friendly], though seeing yet another [alien race?] in their territory may concern them that the Hai may [invade, attack] them, perhaps it would be best for you to only [watch from afar, observe]?"`
-				goto end
-			label afar
-			`	Rek interjects, "While the Korath there are [peaceful, friendly], seeing yet another [alien race?] in their territory may concern them that the Hai may [invade, attack] them, perhaps it would be best for you to only [watch from afar, observe]?"`
+			`	Rek agrees, "The Korath who live there now are indeed [peaceful, friendly], though seeing yet another [alien race?] in their territory may concern them that the Hai may [invade, attack] them. Though, I'm sure they will understand that you are just an [ambassador] wishing to meet them once we have explained."`
 			label end
-			`	Sayari reluctantly agrees, but makes Rek promise to take her to meet the Kor Efret "when the situation is more [stable, certain]."`
+			`	Sayari seems pleased by this.
 			`	Before you leave, you suggest to Rek and Pa'aret that Eruk will probably be interested in learning about Wanderer history and culture, based on your previous encounter with him. Rek agrees that taking something with you would be a good idea and disappears into the government building for a while. When she returns to your ship, she has a bag with many data cards.`
 			choice
 				`	(Say nothing.)`
@@ -135,7 +133,11 @@ mission "Wanderers: Korath Translator 2"
 		has "Wanderers: Korath Translator 1A: done"
 	on offer
 		conversation
+			`During your appraoch, Sayari contacts the local government and informs them that she is bringing some of the aliens from the north to meet a technologist and requests they minimise traffic along their reoute and provide a security escort. While waiting for them, you send a message to Eruk, saying you have brought some Wanderers who wish to meet him and discuss his translator research. He agrees quickly.`
+			`	You are directed to a pad in a secluded part of the spaceport and a number of diplomatic security officers are waiting for you. Sayari greets them and makes sure they understand where you are going. To their credit, they only momentarily gawk and Rek and Pa'aret before preparing to escort you to Eruk's labs.`
+			`	The journey is, fortunately, uneventful. The Wanderers, especially Rek, spend it taking in the alien environment. The route is not completely devoid of Hai civilians, but the few you pass give your group a wide berth, even if they are staring at the Wanderers for the whole time.`
 			``
+				accept
 
 mission "Wanderers: Korath Translator 3"
 	landing
